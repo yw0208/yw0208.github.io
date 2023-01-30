@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion">
+  <meta name="keywords" content="PyMAF, Human Pose and Shape, Pyramidal Mesh Alignment Feedback Loop, SMPL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PyMAF: 3D Human Pose and Shape Regression with Pyramidal Mesh Alignment Feedback Loop</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://yw0208.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</h1>
+          <div class="is-size-3 publication-authors">
+                <span class="author-block"></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1,4*</sup>,</span>
+            <span class="author-block">
+              <a href="https://github.com/HongwenZhang" target="_blank">Hongwen Zhang</a><sup>1,4*</sup>,</span>
+            <span class="author-block">
+              <a href="">Yunlian Sun</a><sup>2*</sup>,</span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>2</sup>Nanjing University of Science and Technology</span>
+            <span class="author-block"><sup>4</sup>Tsinghua University</span>
+          </div>
+
+            <!-- <div class="is-size-3 publication-authors">
+                 <span class="author-block">Check out our new project page <a href="https://www.liuyebin.com/pymaf-x" target="_blank"><i>here</i></a>
+                 </span>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-8">
+        <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+        <img width=90% src="https://hongwenzhang.github.io/images/pymaf.jpg" class="center">
+        <h2 class="subtitle has-text-centered">
+          Overview of our approach Pyramidal Mesh Alignment Feedback (PyMAF)
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            —The recovery of 3D human mesh from monocular images has significantly been developed in recent years. However, existing models usually ignore spatial and 
+            temporal information, which might lead to mesh and image misalignment and temporal discontinuity. For this reason, we propose a novel Spatio-Temporal 
+            Alignment Fusion (STAF) model. As a video-based model, it leverages coherence clues from human motion by an attention-based Temporal Coherence Fusion Module (TCFM). As
+for spatial mesh-alignment evidence, we extract fine-grained local
+information through predicted mesh projection on the feature
+maps. Based on the spatial features, we further introduce a
+multi-stage adjacent Spatial Alignment Fusion Module (SAFM)
+to enhance the feature representation of the target frame. In
+addition to the above, we propose an Average Pooling Module
+(APM) to allow the model to focus on the entire input sequence
+rather than just the target frame. This method can remarkably
+improve the smoothness of recovery results from video. Extensive
+experiments on 3DPW, MPII3D, and H36M demonstrate the
+superiority of STAF. We achieve a state-of-the-art trade-off
+between precision and smoothness. We will release relative codes
+after publication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+  <p></p>
+  <!-- Paper video. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-two-thirds">
+      <h2 class="title is-2">Videos</h2>
+        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. No post-processing.)</h3>
+          <div>
+            <video width=80% src="files/flashmob.mp4" type="video/mp4" autoplay muted loop/>
+          </div>
+        
+          <div>
+            <video width=80% src="files/two_people_dance.mp4" type="video/mp4" autoplay muted loop/>
+          </div>
+         
+          <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with VIBE & MEVA</h3>
+            <div class="content has-text-justified">
+            </div>
+            <div class="content has-text-centered">
+              <video 
+                    id="replay-video"
+                    controls
+                    muted
+                    width="90%">
+                <source src="files/fencing.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/pdf/2103.16507.pdf" target="_blank">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/HongwenZhang/PyMAF" class="external-link" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div align="center" class="container">
+      <div class="columns is-centered">
+          <div class="content">
+              The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks to the original authors.
+          </div>
+        </div>
+      </div>
+  </div>
+</footer>
+
+<a ><img style="height:0;" src="//www.clustrmaps.com/map_v2.png?d=TvNwTxgv-X7ZoNSps5IC7rVKLXh9j1hVtr0urZyW6Lw&cl=ffffff"/></a>
+
+</body>
+</html>
