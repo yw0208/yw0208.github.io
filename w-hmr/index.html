@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion">
-  <meta name="keywords" content="PyMAF, Human Pose and Shape, Pyramidal Mesh Alignment Feedback Loop, SMPL">
+  <meta name="description" content="W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction">
+  <meta name="keywords" content="W-HMR, Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction, SMPL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</title>
+  <title>W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</h1>
+          <h1 class="title is-1 publication-title">W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction</h1>
           <div class="is-size-3 publication-authors">
                 <span class="author-block"></span>
           </div>
@@ -75,7 +75,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
-            <span class="author-block"><sup>2</sup>Tsinghua University</span>
+            <span class="author-block"><sup>2</sup>Beijing Normal University</span>
           </div>
 
             <!-- <div class="is-size-3 publication-authors">
@@ -84,17 +84,28 @@
             </div> -->
           <div class="column has-text-centered">
             <div class="publication-links">
+
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
               
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="STAF.zip"
-                   class="external-link button is-normal is-rounded is-dark" target="_blank" download='STAF.zip'>
+                <a href="W-HMR.zip"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank" download='W-HMR.zip'>
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
               </span>
+              
             </div>
           </div>
         </div>
@@ -114,9 +125,9 @@
           <source src="https://teaser.mp4"
                   type="video/mp4">
         </video> -->
-        <img width=90% src="https://yw0208.github.io/images/staf.png" class="center">
+        <img width=90% src="https://yw0208.github.io/images/w-hmr.png" class="center">
         <h2 class="subtitle has-text-centered">
-          Overview of our approach Spatio-Temporal Alignment Fusion (STAF)
+          Overview of our approach Human Mesh Recovery in World Space (W-HMR)
         </h2>
       </div>
     </div>
@@ -132,22 +143,11 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            —The recovery of 3D human mesh from monocular images has significantly been developed in recent years. However, existing models usually ignore spatial and 
-            temporal information, which might lead to mesh and image misalignment and temporal discontinuity. For this reason, we propose a novel Spatio-Temporal 
-            Alignment Fusion (STAF) model. As a video-based model, it leverages coherence clues from human motion by an attention-based Temporal Coherence Fusion Module (TCFM). As
-for spatial mesh-alignment evidence, we extract fine-grained local
-information through predicted mesh projection on the feature
-maps. Based on the spatial features, we further introduce a
-multi-stage adjacent Spatial Alignment Fusion Module (SAFM)
-to enhance the feature representation of the target frame. In
-addition to the above, we propose an Average Pooling Module
-(APM) to allow the model to focus on the entire input sequence
-rather than just the target frame. This method can remarkably
-improve the smoothness of recovery results from video. Extensive
-experiments on 3DPW, MPII3D, and H36M demonstrate the
-superiority of STAF. We achieve a state-of-the-art trade-off
-between precision and smoothness. We will release relative codes
-after publication.
+            —For a long time, in the field of reconstructing 3D human bodies from monocular images, most methods opted to simplify the task by minimizing the influence of the camera. Using a coarse focal length setting results in the reconstructed bodies not aligning well with distorted images. Ignoring camera
+            rotation leads to an unrealistic reconstructed body pose in world space. Consequently, existing methods' application scenarios are confined to controlled environments. And they struggle to achieve accurate and reasonable reconstruction in world space when confronted with complex and diverse 
+            in-the-wild images. To address the above issues, we propose W-HMR, which decouples global body recovery into camera calibration, local body recovery and global body orientation correction. We design the first weak-supervised camera calibration method for body distortion, eliminating dependence on 
+            focal length labels and achieving finer mesh-image alignment. We propose a novel orientation correction module to allow the reconstructed human body to remain normal in world space. Decoupling body orientation and body pose enables our model to consider the accuracy in camera coordinate and the 
+            reasonableness in world coordinate simultaneously, expanding the range of applications. As a result, W-HMR achieves high-quality reconstruction in dual coordinate systems, particularly in challenging scenes.
           </p>
         </div>
       </div>
@@ -164,7 +164,7 @@ after publication.
           <source src="https://teaser.mp4"
                   type="video/mp4">
         </video> -->
-        <img width=90% src="https://yw0208.github.io/images/accel-mpjpe.png" class="center">
+        <img width=90% src="https://yw0208.github.io/images/agora.png" class="center">
       </div>
     </div>
   </div>
@@ -174,18 +174,15 @@ after publication.
   <div class="columns is-centered has-text-centered">
     <div class="column is-two-thirds">
       <h2 class="title is-2">Videos</h2>
-        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. No post-processing.)</h3>
-        <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with the Latest Work<sup>[1]</sup></h3>
+        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. Smoothed by SmoothNet<sup>[1]</sup)</h3>
+        <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with SOTA Work<sup>[2]</sup></h3>
         
           <div>
-            <video width=50% src="files/backpack.mp4" type="video/mp4" autoplay muted loop/>
+            <video width=50% src="files/compare.mp4" type="video/mp4" autoplay muted loop/>
           </div>
-          <h5 align="center" class="title is-6">carray backpack</h5>
-          <div>
-            <video width=50% src="files/basketball.mp4" type="video/mp4" autoplay muted loop/>
-          </div>
-          <h5 align="center" class="title is-6">play basketball</h5>
-          <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with VIBE<sup>[2]</sup> & MEVA<sup>[3]</sup></h3>
+          <h5 align="center" class="title is-6">Better Mesh-image Alignment and More Realistic Pose</h5>
+          
+          <h3 align="center" style="margin-top:40px;"  class="title is-4">Function of W-HMR</sup></h3>
             <div class="content has-text-justified">
             </div>
             <div class="content has-text-centered">
@@ -194,7 +191,7 @@ after publication.
                     controls
                     muted
                     width="80%">
-                <source src="files/demo_video.mp4"
+                <source src="files/function.mp4"
                         type="video/mp4">
               </video>
             </div>
@@ -207,11 +204,10 @@ after publication.
   <div class="container content">
     <h2 class="title">Reference</h2>
     <p>
-      [1] W.-L. Wei, J.-C. Lin, T.-L. Liu, and H.-Y. M. Liao, “Capturing humans in motion: Temporal-attentive 3d human pose and shape estimation from monocular video”
-      <br>
-      [2] M. Kocabas, N. Athanasiou, and M. J. Black, “Vibe: Video inference for human body pose and shape estimation”
-      <br>
-      [3] Z. Luo, S. A. Golestaneh, and K. M. Kitani, “3d human motion estimation via motion compression and refinement”
+      [1] Ailing Zeng, Lei Yang, Xuan Ju, Jiefeng Li, Jianyi Wang, and Qiang Xu. SmoothNet: A plug-and-play network for refining human poses in videos. In European Conference on Computer Vision (ECCV), volume 13665, pages 625–642, 2022.
+    </p>
+    <p>
+      [2] Muhammed Kocabas, Chun-Hao P Huang, Joachim Tesch, Lea M ̈uller, Otmar Hilliges, and Michael J Black. Spec: Seeing people in the wild with an estimated camera. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 11035–11045, 2021b
     </p>
   </div>
 </section>
