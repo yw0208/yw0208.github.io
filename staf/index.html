@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion">
@@ -7,8 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -23,210 +23,227 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://yw0208.github.io">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-      </div>
     </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://yw0208.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
 
-  </div>
-</nav>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</h1>
-          <div class="is-size-3 publication-authors">
-                <span class="author-block"></span>
-          </div>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal
+              Alignment Fusion</h1>
+            <div class="is-size-3 publication-authors">
+              <span class="author-block"></span>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://github.com/HongwenZhang" target="_blank">Hongwen Zhang</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
-          </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/HongwenZhang" target="_blank">Hongwen Zhang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology, </span>
-            <span class="author-block"><sup>2</sup>Beijing Normal University</span>
-          </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology, </span>
+              <span class="author-block"><sup>2</sup>Beijing Normal University</span>
+            </div>
 
             <!-- <div class="is-size-3 publication-authors">
                  <span class="author-block">Check out our new project page <a href="https://www.liuyebin.com/pymaf-x" target="_blank"><i>here</i></a>
                  </span>
             </div> -->
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2401.01730" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2401.01730" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/yw0208/STAF"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>arXiv</span>
                   </a>
-              </span>
+                </span>
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yw0208/STAF" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-<section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-8">
-        <!-- <video id="teaser" autoplay muted loop height="100%">
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <!-- <video id="teaser" autoplay muted loop height="100%">
           <source src="https://teaser.mp4"
                   type="video/mp4">
         </video> -->
-        <img width=90% src="https://yw0208.github.io/images/staf.png" class="center">
-        <h2 class="subtitle has-text-centered">
-          Overview of our approach Spatio-Temporal Alignment Fusion (STAF)
-        </h2>
+          <img width=90% src="https://yw0208.github.io/images/staf.png" class="center">
+          <h2 class="subtitle has-text-centered">
+            Overview of our approach Spatio-Temporal Alignment Fusion (STAF)
+          </h2>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container">
+  <section class="section">
+    <div class="container">
 
-    <!-- Abstract. -->
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              —The recovery of 3D human mesh from monocular images has significantly been developed in recent years.
+              However, existing models usually ignore spatial and
+              temporal information, which might lead to mesh and image misalignment and temporal discontinuity. For this
+              reason, we propose a novel Spatio-Temporal
+              Alignment Fusion (STAF) model. As a video-based model, it leverages coherence clues from human motion by
+              an attention-based Temporal Coherence Fusion Module (TCFM). As
+              for spatial mesh-alignment evidence, we extract fine-grained local
+              information through predicted mesh projection on the feature
+              maps. Based on the spatial features, we further introduce a
+              multi-stage adjacent Spatial Alignment Fusion Module (SAFM)
+              to enhance the feature representation of the target frame. In
+              addition to the above, we propose an Average Pooling Module
+              (APM) to allow the model to focus on the entire input sequence
+              rather than just the target frame. This method can remarkably
+              improve the smoothness of recovery results from video. Extensive
+              experiments on 3DPW, MPII3D, and H36M demonstrate the
+              superiority of STAF. We achieve a state-of-the-art trade-off
+              between precision and smoothness. We will release relative codes
+              after publication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <p></p>
+    <br>
+    <section class="hero teaser">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-8">
+            <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+            <img width=90% src="https://yw0208.github.io/images/accel-mpjpe.png" class="center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
-        <h2 class="title is-2">Abstract</h2>
+        <h2 class="title is-2">Videos</h2>
+        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. No post-processing.)</h3>
+        <h3 align="center" style="margin-top:40px;" class="title is-4">Comparison with the Latest Work<sup>[1]</sup>
+        </h3>
+
+        <div>
+          <video width=50% src="files/backpack.mp4" type="video/mp4" autoplay muted loop />
+        </div>
+        <h5 align="center" class="title is-6">carray backpack</h5>
+        <div>
+          <video width=50% src="files/basketball.mp4" type="video/mp4" autoplay muted loop />
+        </div>
+        <h5 align="center" class="title is-6">play basketball</h5>
+        <h3 align="center" style="margin-top:40px;" class="title is-4">Comparison with VIBE<sup>[2]</sup> &
+          MEVA<sup>[3]</sup></h3>
         <div class="content has-text-justified">
-          <p>
-            —The recovery of 3D human mesh from monocular images has significantly been developed in recent years. However, existing models usually ignore spatial and 
-            temporal information, which might lead to mesh and image misalignment and temporal discontinuity. For this reason, we propose a novel Spatio-Temporal 
-            Alignment Fusion (STAF) model. As a video-based model, it leverages coherence clues from human motion by an attention-based Temporal Coherence Fusion Module (TCFM). As
-for spatial mesh-alignment evidence, we extract fine-grained local
-information through predicted mesh projection on the feature
-maps. Based on the spatial features, we further introduce a
-multi-stage adjacent Spatial Alignment Fusion Module (SAFM)
-to enhance the feature representation of the target frame. In
-addition to the above, we propose an Average Pooling Module
-(APM) to allow the model to focus on the entire input sequence
-rather than just the target frame. This method can remarkably
-improve the smoothness of recovery results from video. Extensive
-experiments on 3DPW, MPII3D, and H36M demonstrate the
-superiority of STAF. We achieve a state-of-the-art trade-off
-between precision and smoothness. We will release relative codes
-after publication.
-          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video" controls muted width="80%">
+            <source src="files/demo_video.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-  </div>
-  <!--/ Abstract. -->
-  <p></p>
-  <br>
-  <section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-8">
-        <!-- <video id="teaser" autoplay muted loop height="100%">
-          <source src="https://teaser.mp4"
-                  type="video/mp4">
-        </video> -->
-        <img width=90% src="https://yw0208.github.io/images/accel-mpjpe.png" class="center">
-      </div>
-    </div>
-  </div>
-</section>
-  
-  <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-two-thirds">
-      <h2 class="title is-2">Videos</h2>
-        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. No post-processing.)</h3>
-        <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with the Latest Work<sup>[1]</sup></h3>
-        
-          <div>
-            <video width=50% src="files/backpack.mp4" type="video/mp4" autoplay muted loop/>
-          </div>
-          <h5 align="center" class="title is-6">carray backpack</h5>
-          <div>
-            <video width=50% src="files/basketball.mp4" type="video/mp4" autoplay muted loop/>
-          </div>
-          <h5 align="center" class="title is-6">play basketball</h5>
-          <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with VIBE<sup>[2]</sup> & MEVA<sup>[3]</sup></h3>
-            <div class="content has-text-justified">
-            </div>
-            <div class="content has-text-centered">
-              <video 
-                    id="replay-video"
-                    controls
-                    muted
-                    width="80%">
-                <source src="files/demo_video.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-    </div>
-  </div>
-  <!--/ Paper video. -->
-</section>
+    <!--/ Paper video. -->
+  </section>
 
- <section class="section" id="Reference">
-  <div class="container content">
-    <h2 class="title">Reference</h2>
-    <p>
-      [1] W.-L. Wei, J.-C. Lin, T.-L. Liu, and H.-Y. M. Liao, “Capturing humans in motion: Temporal-attentive 3d human pose and shape estimation from monocular video”
-      <br>
-      [2] M. Kocabas, N. Athanasiou, and M. J. Black, “Vibe: Video inference for human body pose and shape estimation”
-      <br>
-      [3] Z. Luo, S. A. Golestaneh, and K. M. Kitani, “3d human motion estimation via motion compression and refinement”
-    </p>
-  </div>
-</section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{yao2024staf,
+      title={STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion},
+      author={Yao, Wei and Zhang, Hongwen and Sun, Yunlian and Tang, Jinhui},
+      journal={arXiv preprint arXiv:2401.01730},
+      year={2024}
+    }
+    </code></pre>
+    </div>
 
-<footer class="footer">
-<!--   <div class="container">
+  </section>
+
+  <section class="section" id="Reference">
+    <div class="container content">
+      <h2 class="title">Reference</h2>
+      <p>
+        [1] W.-L. Wei, J.-C. Lin, T.-L. Liu, and H.-Y. M. Liao, “Capturing humans in motion: Temporal-attentive 3d human
+        pose and shape estimation from monocular video”
+        <br>
+        [2] M. Kocabas, N. Athanasiou, and M. J. Black, “Vibe: Video inference for human body pose and shape estimation”
+        <br>
+        [3] Z. Luo, S. A. Golestaneh, and K. M. Kitani, “3d human motion estimation via motion compression and
+        refinement”
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!--   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link" href="https://arxiv.org/pdf/2103.16507.pdf" target="_blank">
         <i class="fas fa-file-pdf"></i>
@@ -237,13 +254,15 @@ after publication.
     </div> -->
     <div align="center" class="container">
       <div class="columns is-centered">
-          <div class="content">
-              The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks to the original authors.
-          </div>
+        <div class="content">
+          The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks
+          to the original authors.
         </div>
       </div>
-  </div>
-</footer>
+    </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>

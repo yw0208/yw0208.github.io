@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction">
-  <meta name="keywords" content="W-HMR, Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction, SMPL">
+  <meta name="description"
+    content="W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction">
+  <meta name="keywords"
+    content="W-HMR, Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction, SMPL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction</title>
+  <title>W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction
+  </title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
@@ -23,196 +26,222 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://yw0208.github.io">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-      </div>
     </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://yw0208.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
 
-  </div>
-</nav>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction</h1>
-          <div class="is-size-3 publication-authors">
-                <span class="author-block"></span>
-          </div>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">W-HMR: Human Mesh Recovery in World Space with Weak-supervised
+              Camera Calibration and Orientation Correction</h1>
+            <div class="is-size-3 publication-authors">
+              <span class="author-block"></span>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://github.com/HongwenZhang" target="_blank">Hongwen Zhang</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
-          </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/HongwenZhang" target="_blank">Hongwen Zhang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
-            <span class="author-block"><sup>2</sup>Beijing Normal University</span>
-          </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
+              <span class="author-block"><sup>2</sup>Beijing Normal University</span>
+            </div>
 
             <!-- <div class="is-size-3 publication-authors">
                  <span class="author-block">Check out our new project page <a href="https://www.liuyebin.com/pymaf-x" target="_blank"><i>here</i></a>
                  </span>
             </div> -->
-          <div class="column has-text-centered">
-            <div class="publication-links">
+            <div class="column has-text-centered">
+              <div class="publication-links">
 
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2311.17460v3" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2311.17460v3"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/yw0208/W-HMR"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>arXiv</span>
                   </a>
-              </span>
-              
+                </span>
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yw0208/W-HMR" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-<section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-8">
-        <!-- <video id="teaser" autoplay muted loop height="100%">
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <!-- <video id="teaser" autoplay muted loop height="100%">
           <source src="https://teaser.mp4"
                   type="video/mp4">
         </video> -->
-        <img width=90% src="https://yw0208.github.io/images/w-hmr.png" class="center">
-        <h2 class="subtitle has-text-centered">
-          Overview of our approach Human Mesh Recovery in World Space (W-HMR)
-        </h2>
+          <img width=90% src="https://yw0208.github.io/images/w-hmr.png" class="center">
+          <h2 class="subtitle has-text-centered">
+            Overview of our approach Human Mesh Recovery in World Space (W-HMR)
+          </h2>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container">
+  <section class="section">
+    <div class="container">
 
-    <!-- Abstract. -->
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              —For a long time, in the field of reconstructing 3D human bodies from monocular images, most methods opted
+              to simplify the task by minimizing the influence of the camera. Using a coarse focal length setting
+              results in the reconstructed bodies not aligning well with distorted images. Ignoring camera
+              rotation leads to an unrealistic reconstructed body pose in world space. Consequently, existing methods'
+              application scenarios are confined to controlled environments. And they struggle to achieve accurate and
+              reasonable reconstruction in world space when confronted with complex and diverse
+              in-the-wild images. To address the above issues, we propose W-HMR, which decouples global body recovery
+              into camera calibration, local body recovery and global body orientation correction. We design the first
+              weak-supervised camera calibration method for body distortion, eliminating dependence on
+              focal length labels and achieving finer mesh-image alignment. We propose a novel orientation correction
+              module to allow the reconstructed human body to remain normal in world space. Decoupling body orientation
+              and body pose enables our model to consider the accuracy in camera coordinate and the
+              reasonableness in world coordinate simultaneously, expanding the range of applications. As a result, W-HMR
+              achieves high-quality reconstruction in dual coordinate systems, particularly in challenging scenes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <p></p>
+    <br>
+    <section class="hero teaser">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-8">
+            <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+            <img width=100% src="https://yw0208.github.io/images/agora.png" class="center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-two-thirds">
-        <h2 class="title is-2">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            —For a long time, in the field of reconstructing 3D human bodies from monocular images, most methods opted to simplify the task by minimizing the influence of the camera. Using a coarse focal length setting results in the reconstructed bodies not aligning well with distorted images. Ignoring camera
-            rotation leads to an unrealistic reconstructed body pose in world space. Consequently, existing methods' application scenarios are confined to controlled environments. And they struggle to achieve accurate and reasonable reconstruction in world space when confronted with complex and diverse 
-            in-the-wild images. To address the above issues, we propose W-HMR, which decouples global body recovery into camera calibration, local body recovery and global body orientation correction. We design the first weak-supervised camera calibration method for body distortion, eliminating dependence on 
-            focal length labels and achieving finer mesh-image alignment. We propose a novel orientation correction module to allow the reconstructed human body to remain normal in world space. Decoupling body orientation and body pose enables our model to consider the accuracy in camera coordinate and the 
-            reasonableness in world coordinate simultaneously, expanding the range of applications. As a result, W-HMR achieves high-quality reconstruction in dual coordinate systems, particularly in challenging scenes.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ Abstract. -->
-  <p></p>
-  <br>
-  <section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-8">
-        <!-- <video id="teaser" autoplay muted loop height="100%">
-          <source src="https://teaser.mp4"
-                  type="video/mp4">
-        </video> -->
-        <img width=100% src="https://yw0208.github.io/images/agora.png" class="center">
-      </div>
-    </div>
-  </div>
-</section>
-  
-  <!-- Paper video. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-two-thirds">
-      <h2 class="title is-2">Videos</h2>
-        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. Smoothed by SmoothNet<sup>[1]</sup )</h3>
-        <h3 align="center" style="margin-top:40px;"  class="title is-4">Comparison with SOTA Work<sup>[2]</sup></h3>
-        
+        <h2 class="title is-2">Videos</h2>
+        <h3 align="center" class="title is-4">Demo (Frame by frame reconstruction. Smoothed by SmoothNet<sup>[1]</sup
+            )</h3>
+          <h3 align="center" style="margin-top:40px;" class="title is-4">Comparison with SOTA Work<sup>[2]</sup></h3>
+
           <div>
-            <video width=90% src="files/compare.mp4" type="video/mp4" autoplay muted loop/>
+            <video width=90% src="files/compare.mp4" type="video/mp4" autoplay muted loop />
           </div>
-          
-          <h3 align="center" style="margin-top:40px;"  class="title is-4">Better Mesh-image Alignment and More Realistic Poses</sup></h3>
-            <div class="content has-text-justified">
-            </div>
-            <div class="content has-text-centered">
-              <video 
-                    id="replay-video"
-                    controls
-                    muted
-                    width="90%">
-                <source src="files/function.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
+
+          <h3 align="center" style="margin-top:40px;" class="title is-4">Better Mesh-image Alignment and More Realistic
+            Poses</sup></h3>
+          <div class="content has-text-justified">
+          </div>
+          <div class="content has-text-centered">
+            <video id="replay-video" controls muted width="90%">
+              <source src="files/function.mp4" type="video/mp4">
+            </video>
+          </div>
+      </div>
     </div>
-  </div>
-  <!--/ Paper video. -->
-</section>
+    <!--/ Paper video. -->
+  </section>
 
- <section class="section" id="Reference">
-  <div class="container content">
-    <h2 class="title">Reference</h2>
-    <p>
-      [1] Ailing Zeng, Lei Yang, Xuan Ju, Jiefeng Li, Jianyi Wang, and Qiang Xu. SmoothNet: A plug-and-play network for refining human poses in videos. In European Conference on Computer Vision (ECCV), volume 13665, pages 625–642, 2022.
-    </p>
-    <p>
-      [2] Muhammed Kocabas, Chun-Hao P Huang, Joachim Tesch, Lea M ̈uller, Otmar Hilliges, and Michael J Black. Spec: Seeing people in the wild with an estimated camera. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 11035–11045, 2021b
-    </p>
-  </div>
-</section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{yao2023w,
+        title={W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction},
+        author={Yao, Wei and Zhang, Hongwen and Sun, Yunlian and Tang, Jinhui},
+        journal={arXiv preprint arXiv:2311.17460},
+        year={2023}
+      }
+  </code></pre>
+    </div>
 
-<footer class="footer">
-<!--   <div class="container">
+  </section>
+
+  <section class="section" id="Reference">
+    <div class="container content">
+      <h2 class="title">Reference</h2>
+      <p>
+        [1] Ailing Zeng, Lei Yang, Xuan Ju, Jiefeng Li, Jianyi Wang, and Qiang Xu. SmoothNet: A plug-and-play network
+        for refining human poses in videos. In European Conference on Computer Vision (ECCV), volume 13665, pages
+        625–642, 2022.
+      </p>
+      <p>
+        [2] Muhammed Kocabas, Chun-Hao P Huang, Joachim Tesch, Lea M ̈uller, Otmar Hilliges, and Michael J Black. Spec:
+        Seeing people in the wild with an estimated camera. In Proceedings of the IEEE/CVF International Conference on
+        Computer Vision, pages 11035–11045, 2021b
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!--   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link" href="https://arxiv.org/pdf/2103.16507.pdf" target="_blank">
         <i class="fas fa-file-pdf"></i>
@@ -223,13 +252,15 @@
     </div> -->
     <div align="center" class="container">
       <div class="columns is-centered">
-          <div class="content">
-              The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks to the original authors.
-          </div>
+        <div class="content">
+          The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks
+          to the original authors.
         </div>
       </div>
-  </div>
-</footer>
+    </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>
