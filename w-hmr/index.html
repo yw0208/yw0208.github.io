@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction">
+    content="W-HMR: Monocular Human Mesh Recovery in World Space with Weak-Supervised Calibration">
   <meta name="keywords"
     content="W-HMR, Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction, SMPL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction
+  <title>W-HMR: Monocular Human Mesh Recovery in World Space with Weak-Supervised Calibration
   </title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -75,12 +75,15 @@
               <span class="author-block">
                 <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
               <span class="author-block">
+                <a href="https://www.liuyebin.com/" target="_blank">Yebin Liu</a><sup>3</sup>,</span>
+              <span class="author-block">
                 <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
               <span class="author-block"><sup>2</sup>Beijing Normal University</span>
+              <span class="author-block"><sup>3</sup>Tsinghua University</span>
             </div>
 
             <!-- <div class="is-size-3 publication-authors">
@@ -130,7 +133,7 @@
           <source src="https://teaser.mp4"
                   type="video/mp4">
         </video> -->
-          <img width=90% src="https://yw0208.github.io/images/w-hmr.png" class="center">
+          <img width=90% src="https://yw0208.github.io/images/W-HMR.png" class="center">
           <h2 class="subtitle has-text-centered">
             Overview of our approach Human Mesh Recovery in World Space (W-HMR)
           </h2>
@@ -148,20 +151,7 @@
           <h2 class="title is-2">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              —For a long time, in the field of reconstructing 3D human bodies from monocular images, most methods opted
-              to simplify the task by minimizing the influence of the camera. Using a coarse focal length setting
-              results in the reconstructed bodies not aligning well with distorted images. Ignoring camera
-              rotation leads to an unrealistic reconstructed body pose in world space. Consequently, existing methods'
-              application scenarios are confined to controlled environments. And they struggle to achieve accurate and
-              reasonable reconstruction in world space when confronted with complex and diverse
-              in-the-wild images. To address the above issues, we propose W-HMR, which decouples global body recovery
-              into camera calibration, local body recovery and global body orientation correction. We design the first
-              weak-supervised camera calibration method for body distortion, eliminating dependence on
-              focal length labels and achieving finer mesh-image alignment. We propose a novel orientation correction
-              module to allow the reconstructed human body to remain normal in world space. Decoupling body orientation
-              and body pose enables our model to consider the accuracy in camera coordinate and the
-              reasonableness in world coordinate simultaneously, expanding the range of applications. As a result, W-HMR
-              achieves high-quality reconstruction in dual coordinate systems, particularly in challenging scenes.
+              —Previous methods for 3D human motion recovery from monocular images often fall short due to reliance on camera coordinates, leading to inaccuracies in real-world applications. The limited availability and diversity of focal length labels further exacerbate misalignment issues in reconstructed 3D human bodies. To address these challenges, we introduce W-HMR, a weak-supervised calibration method that predicts “reasonable” focal lengths based on body distortion information, eliminating the need for precise focal length labels. Our approach enhances 2D supervision precision and recovery accuracy. Additionally, we present the OrientCorrect module, which corrects body orientation for plausible reconstructions in world space, avoiding the error accumulation associated with inaccurate camera rotation predictions. Our contributions include a novel weak-supervised camera calibration technique, an effective orientation correction module, and a decoupling strategy that significantly improves the generalizability and accuracy of human motion recovery in both camera and world coordinates. The robustness of W-HMR is validated through extensive experiments on various datasets, showcasing its superiority over existing methods. Codes and demos have been made available on the project page.
             </p>
           </div>
         </div>
@@ -178,7 +168,7 @@
           <source src="https://teaser.mp4"
                   type="video/mp4">
         </video> -->
-            <img width=100% src="https://yw0208.github.io/images/agora.png" class="center">
+            <img width=100% src="https://yw0208.github.io/images/humman.png" class="center">
           </div>
         </div>
       </div>
@@ -214,7 +204,7 @@
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{yao2023w,
-        title={W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction},
+        title={W-HMR: Monocular Human Mesh Recovery in World Space with Weak-Supervised Calibration},
         author={Yao, Wei and Zhang, Hongwen and Sun, Yunlian and Tang, Jinhui},
         journal={arXiv preprint arXiv:2311.17460},
         year={2023}
