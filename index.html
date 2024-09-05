@@ -1,222 +1,293 @@
 <html>
 
 <head>
-<title>Wei Yao's Home Page</title>
-<style media="screen" type="text/css">html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  border: 0pt none;
-  font-family: inherit;
-  font-size: 100%;
-  font-style: inherit;
-  font-weight: inherit;
-  margin: 0pt;
-  outline-color: invert;
-  outline-style: none;
-  outline-width: 0pt;
-  padding: 0pt;
-  vertical-align: baseline;
-}
+  <title>Wei Yao's Home Page</title>
+  <style media="screen" type="text/css">
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    font,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    tt,
+    var,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td {
+      border: 0pt none;
+      font-family: inherit;
+      font-size: 100%;
+      font-style: inherit;
+      font-weight: inherit;
+      margin: 0pt;
+      outline-color: invert;
+      outline-style: none;
+      outline-width: 0pt;
+      padding: 0pt;
+      vertical-align: baseline;
+    }
 
-a {
-  color: #1772d0;
-  text-decoration:none;
-}
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
 
-a:focus, a:hover {
-  color: #f09228;
-  text-decoration:none;
-}
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
 
-a.paper {
-  font-weight: bold;
-  font-size: 12pt;
-}
+    a.paper {
+      font-weight: bold;
+      font-size: 12pt;
+    }
 
-b.paper {
-  font-weight: bold;
-  font-size: 12pt;
-}
+    b.paper {
+      font-weight: bold;
+      font-size: 12pt;
+    }
 
-* {
-  margin: 0pt;
-  padding: 0pt;
-}
+    * {
+      margin: 0pt;
+      padding: 0pt;
+    }
 
-body {
-  position: relative;
-  margin: 3em auto 2em auto;
-  width: 810px;
-  font-family: Lato, Verdana, Helvetica, sans-serif;
-  font-size: 14px;
-  /*background: #eee;*/
-}
+    body {
+      position: relative;
+      margin: 3em auto 2em auto;
+      width: 810px;
+      font-family: Lato, Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      /*background: #eee;*/
+    }
 
-h2 {
-  font-family: Lato, Verdana, Helvetica, sans-serif;
-  font-size: 15pt;
-  font-weight: 700;
-}
+    h2 {
+      font-family: Lato, Verdana, Helvetica, sans-serif;
+      font-size: 15pt;
+      font-weight: 700;
+    }
 
-h3 {
-  font-family: Lato, Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-}
-h4 {
-  font-family: Lato, Verdana, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-}
+    h3 {
+      font-family: Lato, Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+    }
 
-strong {
-  font-family: Lato, Verdana, Helvetica, sans-serif;
-  font-size: 13px;
-}
-alert {
-  font-family: Lato, Verdana, Helvetica, sans-serif;
-  font-size: 13px;
-  font-weight: bold;
-  color: #FF0000;
-}
+    h4 {
+      font-family: Lato, Verdana, Helvetica, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
 
-ul { 
-  list-style: circle;
-}
+    strong {
+      font-family: Lato, Verdana, Helvetica, sans-serif;
+      font-size: 13px;
+    }
 
-img {
-  border: none;
-}
+    alert {
+      font-family: Lato, Verdana, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      color: #FF0000;
+    }
 
-li {
-  padding-bottom: 0.5em;
-  margin-left: 1.4em;
-}
+    ul {
+      list-style: circle;
+    }
 
-strong, b {
-  font-weight:bold;
-}
+    img {
+      border: none;
+    }
 
-em, i {
-  font-style:italic;
-}
+    li {
+      padding-bottom: 0.5em;
+      margin-left: 1.4em;
+    }
 
-div.section {
-  clear: both;
-  margin-bottom: 1.5em;
-  /*background: #eee;*/
-}
+    strong,
+    b {
+      font-weight: bold;
+    }
 
-div.spanner {
-  clear: both;
-}
+    em,
+    i {
+      font-style: italic;
+    }
 
-div.paper {
-  clear: both;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
-  border: 1px solid #ddd;
-  background: #fff;
-  padding: 1em 1em 1em 1em;
-}
+    div.section {
+      clear: both;
+      margin-bottom: 1.5em;
+      /*background: #eee;*/
+    }
 
-div.paper div {
-  padding-left: 230px;
-}
+    div.spanner {
+      clear: both;
+    }
 
-img.paper {
-  margin-bottom: 0.5em;
-  float: left;
-  width: 200px;
-}
+    div.paper {
+      clear: both;
+      margin-top: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 1em 1em 1em 1em;
+    }
 
-span.blurb {
-  font-style:italic;
-  display:block;
-  margin-top:0.75em;
-  margin-bottom:0.5em;
-}
+    div.paper div {
+      padding-left: 230px;
+    }
 
-pre, code {
-  font-family: 'Lucida Console', 'Andale Mono', 'Courier', monospaced;
-  margin: 1em 0;
-  padding: 0;
-}
+    img.paper {
+      margin-bottom: 0.5em;
+      float: left;
+      width: 200px;
+    }
 
-div.paper pre {
-  font-size: 0.9em;
-}
-</style>
-<!-- <style>md-block { white-space: pre; font-family: monospace; }</style>
+    span.blurb {
+      font-style: italic;
+      display: block;
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+    }
+
+    pre,
+    code {
+      font-family: 'Lucida Console', 'Andale Mono', 'Courier', monospaced;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    div.paper pre {
+      font-size: 0.9em;
+    }
+  </style>
+  <!-- <style>md-block { white-space: pre; font-family: monospace; }</style>
 <script type="module" src="https://md-block.verou.me/md-block.js"></script> -->
 
 
-<script type="text/javascript" src="js/hidebib.js"></script>
+  <script type="text/javascript" src="js/hidebib.js"></script>
 
-<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
- rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
 </head>
 
 <body>
 
-<div style="margin-bottom: 1em; border-bottom: 1px solid #ddd; background-color: #fff; padding: 1em; height: 160px;">
-  <div style="margin: 0 auto; width: 80%; line-height: 130%;">
-    <img title="zhw" style="float: left; padding-right: 1.5em; height: 160px;" src="images/yw.jpg" />
-    <div style="padding-left: 1em; vertical-align: top; height: 250px;">
-      <span style="font-size: 22pt; line-height: 130%;">Wei Yao</span><br />
-      <span style="font-size: 18pt; line-height: 130%;">姚维</span><br />
-      <span></span> <br />
-      <span>Nanjing University of Science and Technology</span><br />
-      <a href="https://github.com/yw0208" target="_blank">GitHub<img style="height: 7pt;" src="images/link.png" /></a>
+  <div style="margin-bottom: 1em; border-bottom: 1px solid #ddd; background-color: #fff; padding: 1em; height: 160px;">
+    <div style="margin: 0 auto; width: 80%; line-height: 130%;">
+      <img title="zhw" style="float: left; padding-right: 1.5em; height: 160px;" src="images/yw.jpg" />
+      <div style="padding-left: 1em; vertical-align: top; height: 250px;">
+        <span style="font-size: 22pt; line-height: 130%;">Wei Yao</span><br />
+        <span style="font-size: 18pt; line-height: 130%;">姚维</span><br />
+        <span></span> <br />
+        <span>Nanjing University of Science and Technology</span><br />
+        <a href="https://github.com/yw0208" target="_blank">GitHub<img style="height: 7pt;" src="images/link.png" /></a>
+      </div>
     </div>
   </div>
-</div>
 
-<div style="clear: both;"><!-- page div -->
+  <div style="clear: both;"><!-- page div -->
 
 
-<div class="section">
-<h2>About Me</h2>
-  <div class="paper">
-    I received my Bachelor's degree in Information and Computing Science from University of South China in 2021. Currently, I am working on my PhD under the supervision of Prof Jinhui Tang at Nanjing University of Science and Technology. My main research area is 3D vision. Specifically, I am dedicated to exploring the
-    capture and generation of human motion. I hope my research can help people explore the mystery of human motion and apply it to virtual worlds or intelligent robots.
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="paper">
+        I received my Bachelor's degree in Information and Computing Science from University of South China in 2021.
+        Currently, I am working on my PhD under the supervision of Prof Jinhui Tang at Nanjing University of Science and
+        Technology. My main research area is 3D vision. Specifically, I am dedicated to exploring the
+        capture and generation of human motion. I hope my research can help people explore the mystery of human motion
+        and apply it to virtual worlds or intelligent robots.
+      </div>
+    </div>
+
+    <br />
+
+    <h4 id="reports">Human Motion Capture</h4>
+
+
+    <div class="paper" id="W-HMR">
+      <img class="paper" title="W-HMR: Monocular Human Mesh Recovery in World Space with Weak-Supervised Calibration"
+        src="images/w-hmr.png" />
+      <div>
+        <a class="paper" onclick="_gaq.push(['_trackEvent', 'Pub', 'Download', 'hmrsurvey2022']);" href="w-hmr"
+          target="_blank">W-HMR: Monocular Human Mesh Recovery in World Space with Weak-Supervised Calibration</a><br />
+        <strong>Wei Yao</strong>, Hongwen Zhang, Yunlian Sun, Yebin Liu, Jinhui Tang<br />
+        <a href="w-hmr" target="_blank" onclick="_gaq.push(['_trackEvent', 'pymaf2021']);">project page</a>
+      </div>
+      <div class="spanner"></div>
+    </div>
+
+    <div class="paper" id="STAF">
+      <img class="paper" title="STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion"
+        src="images/staf.png" />
+      <div>
+        <a class="paper" onclick="_gaq.push(['_trackEvent', 'Pub', 'Download', 'hmrsurvey2022']);" href="staf"
+          target="_blank">STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</a><br />
+        <br><em><i>IEEE Transactions on Circuits and Systems for Video Technology (<strong>T-CSVT</strong>)</i>,
+          2024</em><br />
+        <strong>Wei Yao</strong>, Hongwen Zhang, Yunlian Sun, Jinhui Tang<br />
+        <a href="staf" target="_blank" onclick="_gaq.push(['_trackEvent', 'pymaf2021']);">project page</a>
+      </div>
+      <div class="spanner"></div>
+    </div>
+
+    <br />
+
   </div>
-</div>
 
-<br />
+  </div><!-- close page div -->
 
-<h4 id="reports">Human Motion Capture</h4>
-
-
-<div class="paper" id="W-HMR">
-  <img class="paper" title="W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction" src="images/w-hmr.png" />
-  <div>
-    <a class="paper" onclick="_gaq.push(['_trackEvent', 'Pub', 'Download', 'hmrsurvey2022']);" href="w-hmr" target="_blank">W-HMR: Human Mesh Recovery in World Space with Weak-supervised Camera Calibration and Orientation Correction</a><br />
-    <strong>Wei Yao</strong>, Hongwen Zhang, Yunlian Sun, Yebin Liu, Jinhui Tang<br />
-    <a href="w-hmr" target="_blank" onclick="_gaq.push(['_trackEvent', 'pymaf2021']);">project page</a>
-  </div>
-  <div class="spanner"></div>
-</div>
-
-<div class="paper" id="STAF">
-  <img class="paper" title="STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion" src="images/staf.png" />
-  <div>
-    <a class="paper" onclick="_gaq.push(['_trackEvent', 'Pub', 'Download', 'hmrsurvey2022']);" href="staf" target="_blank">STAF: 3D Human Mesh Recovery from Video with Spatio-Temporal Alignment Fusion</a><br />
-    <br><em><i>IEEE Transactions on Circuits and Systems for Video Technology (<strong>T-CSVT</strong>)</i>, 2024</em><br />
-    <strong>Wei Yao</strong>, Hongwen Zhang, Yunlian Sun, Jinhui Tang<br />
-    <a href="staf" target="_blank" onclick="_gaq.push(['_trackEvent', 'pymaf2021']);">project page</a>
-  </div>
-  <div class="spanner"></div>
-</div>
-
-<br />
-
-</div>
-
-</div><!-- close page div -->
-
-<script xml:space="preserve" language="JavaScript">
-hideallbibs();
-hideallabs();
-</script>
+  <script xml:space="preserve" language="JavaScript">
+    hideallbibs();
+    hideallabs();
+  </script>
 
 </body>
 
