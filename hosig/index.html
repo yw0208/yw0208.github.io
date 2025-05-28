@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="HOSIG: Full-Body Human-Object-Scene Interaction Generation with Hierarchical Scene Perception">
+  <meta name="keywords"
+    content="HOSIG: Full-Body Human-Object-Scene Interaction Generation with Hierarchical Scene Perception, SMPL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HOSIG: Full-Body Human-Object-Scene Interaction Generation with Hierarchical Scene Perception
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://yw0208.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">HOSIG: Full-Body Human-Object-Scene Interaction Generation with Hierarchical Scene Perception</h1>
+            <div class="is-size-3 publication-authors">
+              <span class="author-block"></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/HongwenZhang" target="_blank">Hongwen Zhang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.liuyebin.com/" target="_blank">Yebin Liu</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
+              <span class="author-block"><sup>2</sup>Beijing Normal University</span>
+              <span class="author-block"><sup>3</sup>Tsinghua University</span>
+            </div>
+
+            <!-- <div class="is-size-3 publication-authors">
+                 <span class="author-block">Check out our new project page <a href="https://www.liuyebin.com/pymaf-x" target="_blank"><i>here</i></a>
+                 </span>
+            </div> -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yw0208/HOSIG"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yw0208/HOSIG" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+          <img width=90% src="videos/hosig.jpg" class="center">
+          <h2 class="subtitle has-text-centered">
+            Human-Object-Scene Interaction Generation (HOSIG)
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              —Generating high-fidelity full-body human interactions with dynamic objects and static scenes remains a critical challenge in computer graphics and animation. Existing methods for human-object interaction often neglect scene context, leading to implausible penetrations, while human-scene interaction approaches struggle to coordinate fine-grained manipulations with long-range navigation. To address these limitations, we propose <b>HOSIG</b>, a novel framework for synthesizing full-body interactions through hierarchical scene perception. Our method decouples the task into three key components: 1) a <i>scene-aware grasp pose generator</i> that ensures collision-free whole-body postures with precise hand-object contact by integrating local geometry constraints, 2) a <i>heuristic navigation algorithm</i> that autonomously plans obstacle-avoiding paths in complex indoor environments via compressed 2D floor maps and dual-component spatial reasoning, and 3) a <i>scene-guided motion diffusion model</i> that generates trajectory-controlled, full-body motions with finger-level accuracy by incorporating spatial anchors and dual-space classifier-free guidance. Extensive experiments on the TRUMANS dataset demonstrate superior performance over state-of-the-art methods. Notably, our framework supports unlimited motion length through autoregressive generation and requires minimal manual intervention. This work bridges the critical gap between scene-aware navigation and dexterous object manipulation, advancing the frontier of embodied interaction synthesis. Codes will be available after publication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <p></p>
+    <br>
+    <section class="hero teaser">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-8">
+            <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+            <img width=90% src="videos/pipeline_hosig.jpg" class="center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paper video. -->
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-2 has-text-centered">Comparison with SOTA Methods —— LINGO[1], CHOIS[2]</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-steve">
+            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-chair-tp">
+            <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shiba">
+            <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-3.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-fullbody">
+            <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-4.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-blueshirt">
+            <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-5.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-mask">
+            <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-6.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-coffee">
+            <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-7.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+              <source src="videos\demo-8.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Complex Interaction Display</h2>
+          <div>
+            <video width=90% src="videos\demo-9.mp4" type="video/mp4" autoplay muted loop />
+          </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+  </code></pre>
+    </div>
+
+  </section>
+
+  <section class="section" id="Reference">
+    <div class="container content">
+      <h2 class="title">Reference</h2>
+      <p>
+        [1] Jiang, Nan, et al. "Autonomous character-scene interaction synthesis from text instruction."
+       SIGGRAPH Asia 2024 Conference Papers. 2024.
+      </p>
+      <p>
+        [2] Li, Jiaman, et al. "Controllable human-object interaction synthesis." European Conference 
+       on Computer Vision. Cham: Springer Nature Switzerland, 2024.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!--   <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/pdf/2103.16507.pdf" target="_blank">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/HongwenZhang/PyMAF" class="external-link" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content">
+          The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks
+          to the original authors.
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
