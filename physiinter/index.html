@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="PhysiInter: Integrating Physical Mapping for High-Fidelity Human Interaction Generation">
+  <meta name="keywords"
+    content="PhysiInter: Integrating Physical Mapping for High-Fidelity Human Interaction Generation, SMPL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PhysiInter: Integrating Physical Mapping for High-Fidelity Human Interaction Generation
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://yw0208.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">PhysiInter: Integrating Physical Mapping for High-Fidelity Human Interaction Generation</h1>
+            <div class="is-size-3 publication-authors">
+              <span class="author-block"></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhanghongwen.cn" target="_blank">Chang Liu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhanghongwen.cn" target="_blank">Hongwen Zhang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Jinhui Tang</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
+              <span class="author-block"><sup>2</sup>Beijing Normal University</span>
+            </div>
+
+            <!-- <div class="is-size-3 publication-authors">
+                 <span class="author-block">Check out our new project page <a href="https://www.liuyebin.com/pymaf-x" target="_blank"><i>here</i></a>
+                 </span>
+            </div> -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- PDF Link. -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/2311.17460v6"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span> -->
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yw0208/PhysiInter" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+          <img width=90% src="https://yw0208.github.io/images/firstcomparison.png" class="center">
+          <h2 class="subtitle has-text-centered">
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              —Driven by advancements in motion capture and generative artificial intelligence, leveraging large-scale MoCap datasets to train generative models for synthesizing diverse, realistic human motions has become a promising research direction. However, existing motion-capture techniques and generative models often neglect physical constraints, leading to artifacts such as interpenetration, sliding, and floating. These issues are exacerbated in multi-person motion generation, where complex interactions are involved. To address these limitations, we introduce physical mapping, integrated throughout the human interaction generation pipeline. Specifically, motion imitation within a physics-based simulation environment is used to project target motions into a physically valid space. The resulting motions are adjusted to adhere to real-world physics constraints while retaining their original semantic meaning. This mapping not only improves MoCap data quality but also directly informs post-processing of generated motions. Given the unique interactivity of multi-person scenarios, we propose a tailored motion representation framework. Motion Consistency (MC) and Marker-based Interaction (MI) loss functions are introduced to improve model performance. Experiments show our method achieves impressive results in generated human motion quality, with a 3%–89% improvement in physical fidelity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <p></p>
+    <br>
+    <section class="hero teaser">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-8">
+            <!-- <video id="teaser" autoplay muted loop height="100%">
+          <source src="https://teaser.mp4"
+                  type="video/mp4">
+        </video> -->
+            <img width=90% src="https://yw0208.github.io/physiinter/files/pipeline_pic.png" class="center">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+          <h3 align="center" style="margin-top:40px;" class="title is-4">Comparison with SOTA Work<sup>[1, 2]</sup></h3>
+          <div class="content has-text-centered">
+            <video id="replay-video" controls muted width="90%">
+              <source src="files/demo.mp4" type="video/mp4">
+            </video>
+          </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <!-- <pre><code>@article{yao2023w,
+        title={PhysiInter: Integrating Physical Mapping for High-Fidelity Human Interaction Generation},
+        author={Yao, Wei and Zhang, Hongwen and Sun, Yunlian and Liu, Yebin and Tang, Jinhui},
+        journal={arXiv preprint arXiv:2311.17460},
+        year={2023}
+      }
+  </code></pre> -->
+    </div>
+
+  </section>
+
+  <section class="section" id="Reference">
+    <div class="container content">
+      <h2 class="title">Reference</h2>
+      <p>
+        [1] Liang H, Zhang W, Li W, et al. Intergen: Diffusion-based multi-human motion generation under complex interactions[J]. International Journal of Computer Vision, 2024, 132(9): 3463-3483.
+      </p>
+      <p>
+        [2] Tevet G, Raab S, Gordon B, et al. Human motion diffusion model[J]. arXiv preprint arXiv:2209.14916, 2022.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <!--   <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/pdf/2103.16507.pdf" target="_blank">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/HongwenZhang/PyMAF" class="external-link" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div> -->
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content">
+          The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks
+          to the original authors.
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
