@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="SynAgent: Generalizable Cooperative Humanoid Manipulation via Solo-to-Cooperative Agent Synergy">
+  <meta name="keywords"
+    content="SynAgent, Cooperative Humanoid Manipulation, Embodied Intelligence, Multi-Agent Coordination, Physics-based Simulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SynAgent: Generalizable Cooperative Humanoid Manipulation via Solo-to-Cooperative Agent Synergy
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://yw0208.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">SynAgent: Generalizable Cooperative Humanoid Manipulation via Solo-to-Cooperative Agent Synergy</h1>
+            <div class="is-size-3 publication-authors">
+              <span class="author-block"></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/yw0208" target="_blank">Wei Yao</a><sup>1*</sup>,</span>
+              <span class="author-block">
+                Haohan Ma<sup>2*</sup>,</span>
+              <span class="author-block">
+                <a href="https://zhanghongwen.cn" target="_blank">Hongwen Zhang</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://imag-njust.net/">Yunlian Sun</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Liangjun Xing<sup>4</sup>,</span>
+              <span class="author-block">
+                Zhile Yang<sup>2</sup>,</span>
+              <span class="author-block">
+                Yuanjun Guo<sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.liuyebin.com/" target="_blank">Yebin Liu</a><sup>4</sup>,</span>
+              <span class="author-block">
+                Jinhui Tang<sup>5</sup></span>
+            </div>
+
+            <div class="is-size-6 publication-authors">
+              <span class="author-block">* Equal Contribution (Co-first Authors)</span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Nanjing University of Science and Technology</span>
+              <span class="author-block"><sup>2</sup>Shenzhen Institutes of Advanced Technology, CAS</span>
+              <span class="author-block"><sup>3</sup>Beijing Normal University</span>
+              <span class="author-block"><sup>4</sup>Tsinghua University</span>
+              <span class="author-block"><sup>5</sup>Nanjing Forestry University</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="videos/SynAgent_TVCG_2026.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/yw0208/SynAgent" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-8">
+          <img width="90%" src="videos/teaser.jpg" class="center">
+          <h2 class="subtitle has-text-centered">
+            SynAgent generalizes across diverse object geometries and supports cooperative manipulation
+            via Solo-to-Cooperative Agent Synergy.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-two-thirds">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Controllable cooperative humanoid manipulation is a fundamental yet challenging problem for embodied intelligence, due to severe data scarcity, complexities in multi-agent coordination, and limited generalization across objects. In this paper, we present <b>SynAgent</b>, a unified framework that enables scalable and physically plausible cooperative manipulation by leveraging <i>Solo-to-Cooperative Agent Synergy</i> to transfer skills from single-agent human-object interaction to multi-agent human-object-human scenarios. To maintain semantic integrity during motion transfer, we introduce an <i>interaction-preserving retargeting method</i> based on an Interact Mesh constructed via Delaunay tetrahedralization, which faithfully maintains spatial relationships among humans and objects. Building upon this refined data, we propose a <i>single-agent pretraining and adaptation paradigm</i> that bootstraps synergistic collaborative behaviors from abundant single-human data through decentralized training and multi-agent PPO. Finally, we develop a <i>trajectory-conditioned generative policy</i> using a conditional VAE, trained via multi-teacher distillation from motion imitation priors to achieve stable and controllable object-level trajectory execution. Extensive experiments demonstrate that SynAgent significantly outperforms existing baselines in both cooperative imitation and trajectory-conditioned control, while generalizing across diverse object geometries. Codes and data will be available after publication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <p></p>
+    <br>
+
+    <!-- Pipeline. -->
+    <section class="hero teaser">
+      <div class="hero-body">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-8">
+            <h2 class="title is-2">Method Overview</h2>
+            <img width="90%" src="videos/pipeline.jpg" class="center">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ Pipeline. -->
+
+    <!-- Demo Video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Demo Video</h2>
+          <div>
+            <video width="90%" src="videos/synagent.mp4" type="video/mp4" autoplay controls muted loop></video>
+          </div>
+      </div>
+    </div>
+    <!--/ Demo Video. -->
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+Coming soon.
+
+  </code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div align="center" class="container">
+      <div class="columns is-centered">
+        <div class="content">
+          The website template is borrowed from <a href="https://nerfies.github.io" target="_blank">nerfies</a>. Thanks
+          to the original authors.
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
